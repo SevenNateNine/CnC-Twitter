@@ -1,4 +1,4 @@
-# CnC-Twitter
+# Covert Cats
 Project that emulates Command and Control center functionality, specifically masking "malicious" traffic, through Twitter's API using steganography. 
 
 ## IMPORTANT DISCLAIMER
