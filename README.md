@@ -1,11 +1,23 @@
 # Covert Cats
-Project that emulates Command and Control center functionality, specifically masking "malicious" traffic, through Twitter's API using steganography. 
 
-## IMPORTANT DISCLAIMER
+![alt text](cc.png "Data Transmission")
+
+Covert Cats is a proof of concept covert command & control channel. It was created for
+our Offensive Security course, for which all group members received As.
+
+It specifically masks "malicious" traffic, through Twitter's API using messages embedded in images of cats, which are then publicly tweeted.
+
+## A Note to Script Kitties
+Yes, this was pun intended. The project is specifically proof of concept, and as such, if one were to copy it verbatim for otherwise illegal purposes,
+they'd encounter some issues. For instance, we deliberately left all embedded messages in plaintext. We also used Twitter's API rather than something
+more covert like a headless browser with the headers modified.
+
+## A Note to those Testing
 The API limits with respect to demoing had issues - This is meant that we could not 
 demonstrate in a timely manner. In order to run how it is meant to be run, the global variable interval in clients
 should be set to a reasonable timeframe (~900 seconds), and scaled accordingly for the number of clients it is
-supporting. Alternatively, purchasing an API Key with more requests for a larger scale production is likely required.
+supporting. Alternatively, purchasing an API Key with more requests for a larger scale production is likely required. 
+Or, one could bypass this limit as previously stated, via headless browser frameworks.
 
 ## Proof of Transfer
 * [Click here to view the record of the transactions](https://twitter.com/NateSBU)
@@ -28,6 +40,7 @@ unless the user is on his or her computer.
 * Check the Twitter every few minutes to check for client receipts (the time frame needs to be scaled according to numClients)
 
 #### server commands
+Because this is proof of concept, we limited the malicious capabilities of this.
 Most commands are in the format, "[ID] Command [Arg]". Below is a list of all the commands that one can execute and a short explaination of what they do:
 * [ID] Download [URL] - Downloads a file from the URL at Client with id [ID]
 * [ID] Upload [FilePath] - Uploads a file to the server from the client.
