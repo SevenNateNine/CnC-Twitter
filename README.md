@@ -1,8 +1,8 @@
-# Covert Cats
+# Consealed Cats
 
 ![alt text](cc.png "Data Transmission")
 
-Covert Cats is a proof of concept covert command & control channel. It was created for
+Consealed Cats is a proof of concept covert command & control channel. It was created for
 our Offensive Security course, for which all group members received As.
 
 It specifically masks "malicious" traffic, through Twitter's API using messages embedded in images of cats, which are then publicly tweeted.
